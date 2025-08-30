@@ -6,7 +6,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaArrowUp } from "react-icons/f
 function Footer() {
     return (
         <footer className="bg-gradient-to-r from-[#202020] to-[#272727] text-white shadow-lg border-t border-[#373737]">
-            <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div className="max-w-7xl mx-auto px-6 pt-12 grid grid-cols-1 md:grid-cols-4 gap-10">
 
                 {/* Company Info */}
                 <div>
@@ -77,7 +77,7 @@ function Footer() {
                 <div className="absolute left-1/2 transform -translate-x-1/2 text-center">
                     <p>
                         © Copyright <span className="text-white font-semibold">Pragya Associates</span> All Rights Reserved.
-                        Designed by <span className="text-white font-semibold">Arvis IT Solutions</span>
+                        <br/>  Designed by Arvis IT Solutions.
                     </p>
                 </div>
 
