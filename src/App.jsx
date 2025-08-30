@@ -1,19 +1,17 @@
-// import React from 'react'
 
-// const App = () => {
-//   return (
-//    <h1 className='bg-red-700'>shraddha</h1>
-//   )
-// }
-
-// export default App
 import React from 'react'
 import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
+import FAQ from './Pages/FAQ'
+import Contact from './Pages/Contact'
 
 export default function App() {
   return (
     <div>
-<Navbar/>
+      <Navbar />
+      <Footer />
+      <FAQ/>
+      <Contact/>
     </div>
   )
 }
