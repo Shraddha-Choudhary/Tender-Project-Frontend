@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
@@ -185,88 +184,74 @@ function FAQ() {
         setOpenQuestion(openQuestion === index ? null : index);
     };
 
-    return (
-        <div className="min-h-screen bg-black text-white py-10 px-6">
-            <h1 className="text-center text-3xl font-bold my-12 text-red-500">
-                Welcome to Frequently Asked Questions (FAQ)
-            </h1>
+return (
+  <div className="min-h-screen bg-[#202020] text-white py-10 px-6">
+    <h1 className="text-center text-3xl font-bold mb-6 text-red-500">
+      Welcome to Frequently Asked Questions (FAQ)
+    </h1>
 
-            <div className="max-w-6xl mx-auto space-y-6">
-                {faqData.map((faq, i) => (
-                    <div
-                        key={i}
-                        className="rounded-lg shadow-md overflow-hidden border border-[#373737]"
-                    >
-                        {/* Category Header */}
-                        <button
-                            onClick={() => toggleCategory(i)}
-                            className="w-full flex justify-between items-center px-6 py-4 text-lg font-semibold 
-              bg-gradient-to-r from-[#202020] to-[#272727] 
-              rounded-lg shadow-lg border border-[#373737] 
-              hover:from-[#2c2c2c] hover:to-[#3a3a3a] transition"
-                        >
-                            {faq.category}
-                            {openCategory === i ? (
-                                <FaMinus
-                                    className="text-black bg-red-500 rounded-full p-1"
-                                    size={24}
-                                />
-                            ) : (
-                                <FaPlus
-                                    className="text-red-500 bg-black rounded-full p-1"
-                                    size={24}
-                                />
-                            )}
-                        </button>
+    <div className="max-w-6xl mx-auto space-y-6">
+      {faqData.map((faq, i) => (
+        <div
+          key={i}
+          className="rounded-lg shadow-md overflow-hidden border border-[#373737] bg-black"
+        >
+          {/* Category Header */}
+          <button
+            onClick={() => toggleCategory(i)}
+            className="w-full flex justify-between items-center px-4 py-4 text-lg font-semibold 
+            bg-gradient-to-r from-[#111] to-[#1a1a1a] 
+            rounded-lg shadow-lg border-b border-[#373737] 
+            hover:from-[#1c1c1c] hover:to-[#2a2a2a] transition"
+          >
+            {faq.category}
+            {openCategory === i ? (
+              <FaMinus className="text-black bg-red-500 rounded-full p-1" size={24} />
+            ) : (
+              <FaPlus className="text-red-500 bg-black rounded-full p-1" size={24} />
+            )}
+          </button>
 
-                        {/* Questions List */}
-                        {openCategory === i && (
-                            <div className="bg-[#1c1c1c]">
-                                {faq.questions.map((item, j) => (
-                                    <div
-                                        key={j}
-                                        className="border-t border-[#373737]"
-                                    >
+          {/* Questions List */}
+          {openCategory === i && (
+            <div className="bg-[#0d0d0d]">
+              {faq.questions.map((item, j) => (
+                <div key={j} className="border-t border-[#373737]">
+                  <button
+                    onClick={() => toggleQuestion(j)}
+                    className="w-full flex justify-between items-center px-6 py-3 text-base font-medium 
+                    bg-gradient-to-r from-[#111] to-[#1a1a1a] 
+                    rounded-lg shadow-md border border-[#373737] 
+                    hover:from-[#1c1c1c] hover:to-[#2a2a2a] transition"
+                  >
+                    {/* Numbering + Question */}
+                    <span className="flex items-start gap-2 text-left">
+                      <span className="text-red-500 font-bold">{j + 1}.</span>
+                      <span className="block">{item.q}</span>
+                    </span>
+                    {openQuestion === j ? (
+                      <FaMinus className="text-black bg-red-500 rounded-full p-1" size={20} />
+                    ) : (
+                      <FaPlus className="text-red-500 bg-black rounded-full p-1" size={20} />
+                    )}
+                  </button>
 
-                                        <button
-                                            onClick={() => toggleQuestion(j)}
-                                            className="w-full flex justify-between items-center px-6 py-3 text-base font-medium 
-  bg-gradient-to-r from-[#202020] to-[#272727] 
-  rounded-lg shadow-md border border-[#373737] 
-  hover:from-[#2c2c2c] hover:to-[#3a3a3a] transition"
-                                        >
-                                            {/* Numbering + Question */}
-                                            <span className="flex items-start gap-2 text-left">
-                                                <span className="text-red-500 font-bold">{j + 1}.</span>
-                                                <span className="block">{item.q}</span>
-                                            </span>
-                                            {openQuestion === j ? (
-                                                <FaMinus
-                                                    className="text-black bg-red-500 rounded-full p-1"
-                                                    size={20}
-                                                />
-                                            ) : (
-                                                <FaPlus
-                                                    className="text-red-500 bg-black rounded-full p-1"
-                                                    size={20}
-                                                />
-                                            )}
-                                        </button>
-
-                                        {openQuestion === j && (
-                                            <div className="px-6 py-4 text-sm text-gray-300 bg-[#111] leading-relaxed">
-                                                {item.a}
-                                            </div>
-                                        )}
-                                    </div>
-                                ))}
-                            </div>
-                        )}
+                  {openQuestion === j && (
+                    <div className="px-6 py-4 text-sm text-gray-300 bg-[#000] leading-relaxed">
+                      {item.a}
                     </div>
-                ))}
+                  )}
+                </div>
+              ))}
             </div>
+          )}
         </div>
-    );
+      ))}
+    </div>
+  </div>
+);
+
+
 }
 
 export default FAQ;
