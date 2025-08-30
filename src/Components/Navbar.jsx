@@ -20,18 +20,7 @@ function Navbar() {
                     bg-gradient-to-r from-[#202020] to-[#272727] 
                     rounded-full shadow-lg border border-[#373737]"
           >
-            {/* <ul className="flex space-x-10 text-gray-200 font-medium">
-                        <li className="hover:text-red-400 transition cursor-pointer">Home</li>
-                        <li className="hover:text-red-400 transition cursor-pointer">About</li>
-                        <li className="hover:text-red-400 transition cursor-pointer">Our Services</li>
-                        <li className="hover:text-red-400 transition cursor-pointer">Our Achievement</li>
-                        <li className="hover:text-red-400 transition cursor-pointer">Live Tender</li>
-                        <li className="hover:text-red-400 transition cursor-pointer">Download</li>
-                        <li className="hover:text-red-400 transition cursor-pointer">FAQ</li>
-                        <li className="hover:text-red-400 transition cursor-pointer">Contact Us</li>
-                    </ul> */}
-
-            <ul className="flex space-x-10 text-gray-200 font-medium">
+            <ul className="flex space-x-10 text-gray-200 font-medium font-poppins">
               <li>
                 <Link
                   to="/"

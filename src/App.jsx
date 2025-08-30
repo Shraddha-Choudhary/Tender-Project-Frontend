@@ -1,37 +1,3 @@
-
-// import React from 'react'
-// import Navbar from './Components/Navbar'
-// import Subcription from './Pages/Subcription'
-// import SliderBanner from './Pages/SliderBanner'
-// import AboutSection from './Pages/About'
-// import Stats from './Pages/Achievements'
-// import Services from './Pages/Services'
-// import Plans from './Pages/Plans'
-// import Achievements from './Pages/Achievements'
-// import Footer from './Components/Footer'
-// import FAQ from './Pages/FAQ'
-// import Contact from './Pages/Contact'
-
-// export default function App() {
-//   return (
-//     <div>
-//       <Navbar />
-//       <Subcription />
-//       <SliderBanner />
-
-//       <AboutSection />
-//       <Services />
-//     <Achievements/>
-//       <Plans/>
-//       <Footer />
-//       <FAQ/>
-//       <Contact/>
-//     </div>
-//   );
-// }
-
-
-
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 

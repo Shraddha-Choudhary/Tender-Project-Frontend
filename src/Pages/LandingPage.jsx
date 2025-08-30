@@ -6,6 +6,7 @@ import Services from "./Services";
 import Achievements from "./Achievements";
 import Plans from "./Plans";
 
+
 export default function LandingPage() {
   return (
     <div>
@@ -14,6 +15,7 @@ export default function LandingPage() {
       <AboutSection />
       <Services />
       <Achievements />
+      
       <Plans />
     </div>
   );

@@ -20,7 +20,6 @@ const About = () => {
           Tender Management System helps you manage, monitor, and win tenders
           easily.
         </p>
-    
 
         <div className="grid md:grid-cols-3 gap-6">
           {/* Card 1 */}
@@ -30,7 +29,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.3 }}
-            className="bg-yellow-200 rounded-2xl shadow p-6"
+            className="bg-gradient-to-r from-[#eed78e] via-[#f5cf97] to-[#ffd54f] rounded-2xl shadow p-6"
           >
             <h3 className="text-xl font-semibold text-gray-700 mb-3">
               ✔ Secure & Transparent Bidding
@@ -47,7 +46,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.3 }}
-            className="bg-yellow-200 rounded-2xl shadow p-6"
+            className="bg-gradient-to-r from-[#eed78e] via-[#f5cf97] to-[#ffd54f] rounded-2xl shadow p-6"
           >
             <h3 className="text-xl font-semibold text-gray-700 mb-3">
               ✔ Easy Tender Monitoring
@@ -64,7 +63,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.3 }}
-            className="bg-yellow-200 rounded-2xl shadow p-6"
+            className="bg-gradient-to-r from-[#eed78e] via-[#f5cf97] to-[#ffd54f] rounded-2xl shadow p-6"
           >
             <h3 className="text-xl font-semibold text-gray-700 mb-3">
               ✔ Real-time Notifications

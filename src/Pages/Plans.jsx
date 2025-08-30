@@ -32,12 +32,15 @@ const Plans = () => {
 
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      <div className="max-w-7xl mx-auto text-center">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+        
+
+        <h2 className="text-5xl font-bold text-black mb-6 font-poppins">
           Choose the plan that’s right for you
         </h2>
-        <p className="text-gray-600 mb-8">
+
+        <p className="text-lg text-black mb-8 font-poppins">
           Subscribe to our Tender Management platform and select from flexible
           plans tailored for your business needs.
         </p>
@@ -47,7 +50,7 @@ const Plans = () => {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className="bg-yellow-100 shadow-lg rounded-2xl p-8 flex flex-col justify-between hover:shadow-2xl transition"
+              className="bg-gradient-to-r from-[#eed78e] via-[#f5cf97] to-[#ffd54f] shadow-lg rounded-2xl p-8 flex flex-col justify-between hover:shadow-2xl transition"
             >
               <div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">
