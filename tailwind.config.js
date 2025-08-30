@@ -1,19 +1,3 @@
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: [],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// };
-
-// module.exports = {
-//   content: ["./src/**/*.{html,js}"],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// };
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -24,5 +8,8 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  fontFamily: {
+    montserrat: ["Montserrat", "sans-serif"],
+  },
+    plugins: [],
 }
