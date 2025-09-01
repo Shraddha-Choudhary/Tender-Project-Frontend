@@ -5,7 +5,7 @@ import AboutSection from "./About";
 import Services from "./Services";
 import Achievements from "./Achievements";
 import Plans from "./Plans";
-import TendeerList from "./TendeerList";
+
 
 
 export default function LandingPage() {
@@ -16,7 +16,7 @@ export default function LandingPage() {
       <AboutSection />
       <Services />
       <Achievements />
-      <TendeerList/>
+    
       <Plans />
     </div>
   );

@@ -9,6 +9,7 @@ import LandingPage from "./Pages/LandingPage";
 import FAQ from "./Pages/FAQ";
 import Contact from "./Pages/Contact";
 import TendeerList from "./Pages/TendeerList";
+import Dashboard from "./Admin/Dashboard";
 
 export default function App() {
   return (
@@ -19,7 +20,8 @@ export default function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/Tenderlist" element={<TendeerList />} />
+        <Route path="/tenderlist" element={<TendeerList />} />
+        <Route path="/admindashboard" element={<Dashboard/>} />
       </Routes>
 
       <Footer />
