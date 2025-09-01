@@ -79,7 +79,7 @@ import React, { useState } from "react";
 import * as XLSX from "xlsx";
 import { FaEye, FaEdit, FaTrash } from "react-icons/fa";
 
-const UploadFile = () => {
+const TenderList = () => {
   const [data, setData] = useState([]);
 
   const handleFileUpload = (e) => {
@@ -162,4 +162,4 @@ const UploadFile = () => {
   );
 };
 
-export default UploadFile;
+export default TenderList;
