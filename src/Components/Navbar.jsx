@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <nav className="bg-[#101010] py-4">
       <div className="max-w-8xl mx-auto flex items-center justify-between px-6">
-        {/* Logo - Left Side */}
+
         <div className="flex items-center">
           <img
             src="src/Assets/Images/logo.jpg"
@@ -17,7 +17,7 @@ function Navbar() {
           />
         </div>
 
-        {/* Capsule Container - Center (Desktop Only) */}
+
         <div
           className="hidden md:flex items-center px-14 py-3 gap-8 
             bg-gradient-to-r from-[#202020] to-[#272727] 
