@@ -12,12 +12,12 @@ function Navbar() {
           <img
             src="src/Assets/Images/logo.jpg"
             alt="Logo"
-            className="w-14 h-auto drop-shadow-lg"
+            className="w-28  h-12 drop-shadow-lg"
           />
         </div>
 
         <div
-          className="hidden md:flex items-center px-14 py-3 gap-8 
+          className="hidden md:flex items-center px-12 py-3 gap-8 
             bg-gradient-to-r from-[#202020] to-[#272727] 
             rounded-full shadow-lg border border-[#373737]"
         >
@@ -102,7 +102,7 @@ function Navbar() {
           </button>
           </Link>
 
-          <select className="bg-white text-black px-3 py-1 rounded-full border border-gray-300 shadow-sm">
+          <select className="bg-white text-black  px-3 py-2 rounded-full border border-gray-300 shadow-sm">
             <option>English</option>
             <option>Hindi</option>
           </select>

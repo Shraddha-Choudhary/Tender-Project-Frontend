@@ -1,9 +1,10 @@
 import React from 'react'
+import Admin from './Admin'
 
-const Dashboard = () => {
+function Dashboard() {
   return (
     <div>
-      admin dashborad
+<Admin/>
     </div>
   )
 }
